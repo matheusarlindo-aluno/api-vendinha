@@ -1,4 +1,6 @@
 package com.api_vendinha.api.domain.dtos.response
 
-class UserResponseDto {
-}
+data class UserResponseDto(
+    val id: Long?,
+    val name:String
+)
