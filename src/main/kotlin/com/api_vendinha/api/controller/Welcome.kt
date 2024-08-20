@@ -11,17 +11,17 @@ import org.springframework.web.bind.annotation.RestController
 class Welcome {
 
     @GetMapping("/welcome")
-    fun welcome():String{
+    fun welcome(): String {
         return "Ola mundo!.."
     }
 
     @GetMapping("/media")
-    fun media(): Double{
-        val nota1:Double = 5.2
-        val not2:Double = 4.2
-        val not3:Double = 6.2
+    fun media(): Double {
+        val nota1: Double = 5.2
+        val not2: Double = 4.2
+        val not3: Double = 6.2
 
-        val media:Double = (nota1+not2+not3)/3
+        val media: Double = (nota1 + not2 + not3) / 3
         return media
     }
 
