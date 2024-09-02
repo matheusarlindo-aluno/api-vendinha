@@ -19,5 +19,14 @@ data class User (
     var name: String, // O nome do usuário é uma string não nula.
 
     @Column(name = "email")
-    var email:String
+    var email:String,
+
+    @Column(name = "password")
+    var password: String,
+
+    @Column(name = "cpf_cnpj")
+    var cpf_cnpj: String,
+
+    @Column(name = "is_active")
+    var is_active: Boolean
 )

@@ -12,4 +12,7 @@ interface UserServiceInterface {
         id:Long,
         userRequestDto: UserRequestDto
     ): UserResponseDto
+
+    fun findUser(id: Long): UserResponseDto
+    fun changeStatus(id: Long, status:Boolean): UserResponseDto
 }

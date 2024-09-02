@@ -4,5 +4,8 @@ package com.api_vendinha.api.domain.dtos.request
 data class UserRequestDto(
     // Propriedade que armazena o nome do usuário. É uma string não nula.
     val name: String,
-    val email: String
+    val email: String,
+    val password: String,
+    val cpf_cnpj: String,
+    val is_active: Boolean
 )

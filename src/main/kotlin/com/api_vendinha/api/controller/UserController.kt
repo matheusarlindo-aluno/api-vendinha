@@ -28,4 +28,17 @@ class UserController (
     ):UserResponseDto{
         return userService.update(id, userRequestDto)
     }
+
+    @GetMapping("/{id}")
+    fun findUser(@PathVariable id: Long):UserResponseDto{
+        return userService.findUser(id)
+    }
+
+    @PutMapping("/{id}/status/{status}")
+    fun changeStatus(
+        @PathVariable id: Long,
+        @PathVariable status:Boolean
+    ):UserResponseDto{
+        return userService.changeStatus(id, status)
+    }
 }
