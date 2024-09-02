@@ -16,5 +16,8 @@ data class User (
 
     // Define a coluna "name" na tabela, onde será armazenado o nome do usuário.
     @Column(name = "name")
-    val name: String // O nome do usuário é uma string não nula.
+    var name: String, // O nome do usuário é uma string não nula.
+
+    @Column(name = "email")
+    var email:String
 )

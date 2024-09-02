@@ -6,5 +6,7 @@ data class UserResponseDto(
     val id: Long?,
 
     // Propriedade que armazena o nome do usuário. É uma string não nula.
-    val name: String
+    val name: String,
+
+    val email: String
 )
