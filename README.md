@@ -71,7 +71,7 @@ curl --location --request PUT 'http://localhost:8000/api/users/1' \
 **Exemplo de `curl`**:
 
 ```bash
-curl --location 'http://localhost:8081/user/1'
+curl --location 'http://localhost:8000/user/1'
 ```
 
 ### Inativar ou Ativar usuário pelo ID
@@ -83,8 +83,5 @@ curl --location 'http://localhost:8081/user/1'
 **Exemplo de `curl`**:
 
 ```bash
-curl --location --request PUT 'http://localhost:8081/user/1/status/false' \
---header 'Content-Type: application/json' \
---header 'Cookie: JSESSIONID.7e3e6227=node0ov95b8jfvk8j1ei56yaq9htyk0.node0' \
---data ''
+curl --location --globoff --request POST 'http://localhost:8000/api/users/{id}/status/{is_active}'
 ```
