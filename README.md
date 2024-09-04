@@ -54,10 +54,10 @@ curl --location 'http://localhost:8000/api/users' \
 **Exemplo de `curl`**:
 
 ```bash
-curl --location --request PUT 'http://localhost:8081/user/1' \
+curl --location --request PUT 'http://localhost:8000/api/users/1' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "name": "Carlos Rafael",
+    "name": "John Doe",
     "email": "john.doe@example.com",
     "password": "password123",
     "is_active": true,
