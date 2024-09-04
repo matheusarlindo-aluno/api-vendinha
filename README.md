@@ -31,7 +31,7 @@ Essas instruções ajudarão você a executar uma cópia do projeto em sua máqu
 **Exemplo de `curl`**:
 
 ```bash
-curl --location 'http://localhost:8081/user/save' \
+curl --location 'http://localhost:8000/api/users' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "name": "John Doe",
