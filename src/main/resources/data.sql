@@ -6,3 +6,10 @@ PASSWORD VARCHAR(255) NOT NULL,
 CPF_CNPJ VARCHAR(255) NOT NULL,
 IS_ACTIVE BOOLEAN DEFAULT TRUE
 );
+
+create table produtos(
+    id integer primary key auto_increment,
+    preco FLOAT,
+    quantidade integer,
+    USER_ID INTEGER REFERENCES USERS (id)
+);

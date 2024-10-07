@@ -4,8 +4,6 @@ import com.api_vendinha.api.domain.dtos.request.UserRequestDto
 import com.api_vendinha.api.domain.dtos.response.UserResponseDto
 import com.api_vendinha.api.domain.entities.User
 import com.api_vendinha.api.infrastructure.repository.UserRepository
-import org.hibernate.annotations.NotFound
-import org.springframework.data.crossstore.ChangeSetPersister.NotFoundException
 import org.springframework.stereotype.Service
 
 // Marca a classe como um componente de serviço do Spring, o que permite que o Spring a gerencie e a injete em outros componentes.

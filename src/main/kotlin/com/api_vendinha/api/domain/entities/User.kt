@@ -6,7 +6,7 @@ import jakarta.persistence.*
 // Define que a entidade é associada à tabela "users".
 @Table(name = "users")
 @Entity
-data class User (
+data class User(
     // Marca o campo id como a chave primária da entidade.
     // A geração automática do valor do id é gerenciada pelo banco de dados.
     @Id
@@ -28,5 +28,8 @@ data class User (
     var cpf_cnpj: String,
 
     @Column(name = "is_active")
-    var is_active: Boolean
+    var is_active: Boolean,
+
+    @OneToMany(mappedBy = "user")
+    var produtos: List<Produto>? = arrayListOf()
 )
